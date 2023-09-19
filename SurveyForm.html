@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<h1>Survey Form</h1>
+	<id ="description"><p>This survey form is used for to collect feedback from customer.</p>
+	<form id ="survey-form">
+		<label>Name:
+			<input id="name-label" type="text" placeholder="Name" required>
+		</label>
+		<label>Email:
+			<input id="email-label" type="email" placeholder="Email" required>
+		</label>
+		<label>Age:
+			<input id="number-label" type="number" placeholder="Age" min="1" max="100" required>
+		</label>
+		<select id="dropdown">
+			<option value="premium">Premium</option>
+			<option value="member">Member</option>
+			<option value="non-member">Non-Member</option>
+		</select>
+		<fieldset>
+		<legend>Town</legend>
+		<label><input id="Miri" type="radio" name="Miri-Kuching">Miri</label>
+		<label><input id="Kuching" type="radio" name="Miri-Kuching">Kuching</label>
+		</fieldset>
+		
+		<fieldset>
+		<legend>Free Gift</legend>
+		<label><input id="umbrella" type="checkbox" value="umbrella">Umbrella</label>
+		<label><input id="monopod" type="checkbox" value="monopod">Monopod</label>
+		<label><input id="earphone" type="checkbox" value="earphone">Earphone</label>
+		</fieldset>
+		
+		<p>Comment:</p>
+		<textarea id="Comment" name="comment" rows="4" cols="50"
+		placeholder="Please add your comment here" ></textarea>
+		
+		<button type="submit">Submit</button>
+	</form>
+<footer>
+	<p><h5>Created by Aty Apriani Ngui (19/09/2023)</h5></p>
+</footer>
+</body>
+</html>
